@@ -1,6 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
+    <script src="https://unpkg.com/htmx.org@1.9.4"></script>
+    <!-- have a button POST a click via AJAX -->
+    <button hx-post="/clicked" hx-swap="outerHTML">
+      Click Me
+    </button>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -8,5 +12,10 @@
 </head>
 <body>
     <script src="script.js"></script>
+    <div class="product">
+        <h4>상품1 (7000원)</h4>
+        <h4>상품2 (7000원)</h4>
+        <h4>상품3 (7000원)</h4>
+        <div hx-get="/time">더보기</div>
 </body>
 </html>
