@@ -22,3 +22,8 @@ const player = {
     points: 10,
     fat : true,
 }
+function plus(firstNumber, secondNumber){
+    console.log(firstNumber + secondNumber);
+}
+
+plus(60, 8);
