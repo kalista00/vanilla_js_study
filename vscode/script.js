@@ -13,8 +13,6 @@ const thu = "thu";
 const fri = "fri";
 //array
 const dayOfweek = [wed, thu, fri, true, "hello"];
-console.log(dayOfweek);
-console.log(dayOfweek[3]);
 dayOfweek.push("ee");
 console.log(dayOfweek[5]);
 const player = {
@@ -25,5 +23,4 @@ const player = {
 function plus(firstNumber, secondNumber){
     console.log(firstNumber + secondNumber);
 }
-
 plus(60, 8);
